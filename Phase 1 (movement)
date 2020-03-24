@@ -1,0 +1,15 @@
+import pygame 
+
+pygame.init 
+screen= pygame.display.set_mode(600, 500)
+done= False 
+is_Red= True
+rect_y = 50 
+y_dir = 1
+speed_y = 0 
+speed_x = 1
+rect_x = 80
+x_dir = 1
+
+while not done: 
+    for event in pygame.event.get(): 
