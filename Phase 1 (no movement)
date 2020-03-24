@@ -2,16 +2,24 @@ import pygame
 
 pygame.init 
 screen= pygame.display.set_mode(600, 500)
-screen.fill(0, 0, 0) 
-
 
 done= False 
-is_Red= True 
+is_Red= True
+
 
 while not done: 
     for event in pygame.event.get(): 
       if event.type == pygame.QUIT:'
         done = TRUE 
       if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
-
+      
+    if is_red: color = (255, 100, 100) 
+    else: color= (0, 16, 124)
+    screen.fill((0, 0, 0) 
+    
 pygame.daw.rect(screen, color, pygame.Rect(263, 225, 80, 50) 
+
+pygame.display.flip() 
+
+
+
