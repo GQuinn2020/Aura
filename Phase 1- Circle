@@ -1,0 +1,25 @@
+import pygame  
+
+pygame.init() 
+screen= pygame.display.set_mode(800, 600)
+
+done = False 
+is_blue = True 
+
+
+while not_done: 
+  for event in pygame.get(): 
+    if event.type == pygame.QUIT: 
+      done = True
+    if event.type == pygame.KEYDOWN and event.key == pgame.K_SPACE: 
+      is_blue = not is_blue 
+      
+  if is_blue: color = (16, 16, 255) 
+  else: color = (0, 16, 124) 
+  screen.fill(0, 0, 0) 
+
+
+pygame.draw.circle(263, 255, 40, 20) 
+
+pygame.display.flip()
+  
